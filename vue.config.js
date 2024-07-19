@@ -1,5 +1,6 @@
 const {defineConfig} = require('@vue/cli-service')
 module.exports = defineConfig({
+
     publicPath: "./",
     parallel: false,
     transpileDependencies: true,
@@ -15,6 +16,15 @@ module.exports = defineConfig({
             .options({
                 raw: true,
             });
+    },
+    pwa: {
+        iconPaths: {
+            favicon32: 'favicon.ico',
+            favicon16: 'favicon.ico',
+            appleTouchIcon: 'favicon.ico',
+            maskIcon: 'favicon.ico',
+            msTileImage: 'favicon.ico'
+        }
     },
 
 })
