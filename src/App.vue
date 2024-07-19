@@ -1,32 +1,59 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+  <div id="app" class="app-container">
+    <HeaderTop></HeaderTop>
+    <div class="layout-body">
+      <keep-alive :include="keepAliveArr">
+        <router-view></router-view>
+      </keep-alive>
+    </div>
   </div>
 </template>
 
-<style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+// import {onMounted} from "vue"
+import HeaderTop from "@/components/HeaderTop.vue"
+import "@/assets/style/code-light.css"
 
-nav {
-  padding: 30px;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+export default {
+  name: 'App',
+  created() {
+    window.document.documentElement.setAttribute('theme', 'dark');
+  },
+  data() {
+    return{
+      keepAliveArr:['HomePage','TimelinePage']  //页面缓存组件
     }
-  }
+  },
+  methods: {},
+  // setup() {
+  //   onMounted(() => {
+  //     //创建link标签默认引入主题样式文件
+  //     let link = document.createElement("link");
+  //     link.type = "text/css";
+  //     link.id = "theme";
+  //     link.rel = "stylesheet";
+  //     link.href = './css/dark-theme.css';
+  //     document.getElementsByTagName("head")[0].appendChild(link);
+  //   });
+  //
+  //   return {};
+  // },
+  components: {
+    HeaderTop,
+  },
+
+
+};
+</script>
+
+<style lang="less">
+.layout-body {
+  flex-grow: 1;
+  height: calc(100vh - 60px);
+  //border: 1px red solid;
+  //background-color: #737373;
 }
+
+
 </style>

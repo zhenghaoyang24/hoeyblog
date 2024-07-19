@@ -1,0 +1,277 @@
+:root[theme="dark"] {
+    --public-green: #42b782;
+    --div-background-color: #1a1a1a;
+    --header-top-box-shadow: rgba(0, 0, 0, 0.32);
+    --md-item-box-shadow-hover: rgba(0, 0, 0, 0.35);
+    --md-item-box-shadow: rgba(0, 0, 0, 0.19);
+    --publi-text-color: #d8d8d8;
+    --header-top-logo-hover: #fbfbfb;
+    --theme-change-button-bc: #3a3a3a;
+    --theme-change-button-border: #878787;
+    --header-top-right-span: #595959;
+    --hoey-info-hr-color: #2c2c2c;
+    --web-footer-background-color: #171717;
+    --web-footer-h-color: #777777;
+    --timeline-page-body-item: #989898;
+
+
+}
+
+:root[theme="light"] {
+    --public-green: #42b782;
+    --div-background-color: #fdfdfd;
+    --header-top-box-shadow: rgba(140, 140, 140, 0.22);
+    --md-item-box-shadow-hover: rgba(140, 140, 140, 0.34);
+    --md-item-box-shadow: rgba(140, 140, 140, 0.15);
+    --publi-text-color: #1a1a1a;
+    --header-top-logo-hover: #7c7c7c;
+    --theme-change-button-bc: #eaeaea;
+    --theme-change-button-border: #afafaf;
+    --header-top-right-span: #c3c3c3;
+    --hoey-info-hr-color: #d1d1d1;
+    --web-footer-background-color: #f1f1f1;
+    --web-footer-h-color: #777777;
+    --timeline-page-body-item: #4e4e4e;
+}
+
+body {
+    background-color: var(--div-background-color);
+}
+
+/*进度条*/
+html::-webkit-scrollbar {
+    background-color: var(--div-background-color);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--public-green);
+}
+
+/*返回于回到顶部按钮*/
+.back-top-button {
+    background-color: var(--div-background-color);
+    box-shadow: 0 0 5px 1px var(--header-top-box-shadow); /*阴影*/
+}
+
+.left-back-button {
+    background-color: var(--div-background-color);
+    box-shadow: 0 0 5px 1px var(--header-top-box-shadow); /*阴影*/
+}
+
+/*顶部导航栏*/
+.header-top {
+    box-shadow: 0 2px 5px 1px var(--header-top-box-shadow); /*下方阴影*/
+    background-color: var(--div-background-color);
+}
+
+.header-top-logo > a {
+    color: var(--publi-text-color);
+}
+
+.header-top-logo > a:hover {
+    color: var(--header-top-logo-hover);
+}
+
+.header-top-right {
+    > a {
+        color: var(--publi-text-color)
+    }
+
+    > span {
+        background-color: var(--header-top-right-span);
+    }
+}
+
+.header-top-right > a.router-active {
+    color: var(--public-green);
+}
+
+.header-top-right > a:hover {
+    color: var(--public-green);
+}
+
+.theme-change-button-body {
+    background-color: var(--theme-change-button-bc);
+    border-color: var(--theme-change-button-border);
+}
+
+.theme-change-button-body:hover {
+    border-color: var(--publi-text-color);
+}
+
+/*主页巨幕*/
+.home-jumbotron {
+    background-color: var(--div-background-color);
+}
+
+.home-jumbotron-text {
+    color: var(--publi-text-color);
+}
+
+/*主页布局*/
+.homepage-content-layout {
+    background-color: var(--div-background-color);
+    box-shadow: 0 -2px 5px 1px var(--header-top-box-shadow);
+}
+
+/*md列表*/
+.markdown-list-item {
+    box-shadow: 0 0 5px 3px var(--md-item-box-shadow); /*阴影*/
+}
+
+.markdown-list-item:hover {
+    box-shadow: 0 0 5px 3px var(--md-item-box-shadow-hover); /*阴影*/
+}
+
+.markdown-list-item > h3 {
+    color: var(--publi-text-color);
+}
+
+.markdown-title-content {
+    color: var(--publi-text-color);
+}
+
+.markdown-title-content::after {
+    background-color: var(--public-green);
+}
+
+.markdown-info-body > div:nth-child(3) > label:hover {
+    color: var(--public-green);
+}
+
+.user-information-body {
+    box-shadow: 0 0 5px 3px var(--md-item-box-shadow); /*阴影*/
+}
+
+.hoey-info-name {
+    color: var(--publi-text-color);
+}
+
+.article-label-total-body {
+    > div {
+        color: var(--publi-text-color);
+    }
+}
+
+.hoey-info-hr {
+    background-color: var(--hoey-info-hr-color);
+}
+
+.article-label-detail-title > span:nth-child(2) {
+    color: var(--publi-text-color);
+}
+
+.hoey-info-category-item > span:nth-child(1) {
+    color: var(--publi-text-color);
+}
+
+.hoey-info-category-item:hover > span:nth-child(1) {
+    color: var(--public-green);
+}
+
+.hoey-info-category-item {
+    box-shadow: 0 0 5px 3px var(--md-item-box-shadow); /*阴影*/
+}
+
+.hoey-info-category-item:hover {
+    box-shadow: 0 0 5px 3px var(--md-item-box-shadow-hover); /*阴影*/
+}
+
+.hoey-info-category-item > span:nth-child(2) {
+    background-color: var(--public-green);
+    color: var(--publi-text-color);
+}
+
+
+/*article page*/
+.category-select-title {
+    color: var(--publi-text-color);
+}
+
+.category-select-item {
+    box-shadow: 0 0 5px 3px var(--md-item-box-shadow); /*阴影*/
+}
+
+.category-select-item:hover {
+    background-color: var(--public-green);
+}
+
+.category-select-item-no-active {
+    background-color: var(--div-background-color);
+    color: var(--publi-text-color);
+}
+
+.category-select-item-active {
+    background-color: var(--public-green);
+    color: var(--publi-text-color);
+}
+.article-type-select-body>span{
+    box-shadow: 0 0 5px 3px var(--md-item-box-shadow); /*阴影*/
+}
+.article-type-select-body>span:hover{
+    background-color: var(--public-green);
+}
+
+.mobile-article-type:hover{
+    color: var(--public-green);
+}
+.mobile-article-type{
+    box-shadow: 0 0 5px 3px var(--md-item-box-shadow); /*阴影*/
+    color: var(--publi-text-color);
+}
+.mobile-article-type:hover {
+    box-shadow: 0 0 5px 3px var(--md-item-box-shadow-hover); /*阴影*/
+}
+.user-information-mobile-body{
+    box-shadow: 0 0 5px 3px var(--md-item-box-shadow); /*阴影*/
+}
+
+
+
+/*时间线*/
+.timeline-page-body-year {
+    > h2 {
+        color: var(--publi-text-color);
+    }
+}
+
+.timeline-page-body-item {
+    color: var(--timeline-page-body-item);
+
+    > span:nth-child(1) {
+        background-color: var(--timeline-page-body-item);
+    }
+}
+
+.timeline-page-body-item:hover {
+    color: var(--public-green);
+
+    > span:nth-child(1) {
+        background-color: var(--public-green);
+    }
+}
+
+.timeline-page-body {
+    border-left-color: var(--timeline-page-body-item);
+}
+
+
+/*文章详情*/
+.markdown-detail-body > h2 {
+    color: var(--publi-text-color);
+}
+
+
+/*foter*/
+.web-footer-body {
+    background-color: var(--web-footer-background-color);
+}
+
+.footer-web-info-div {
+    color: var(--publi-text-color);
+}
+
+.footer-web-info-div > span:hover {
+    color: var(--public-green);
+}
+

@@ -1,0 +1,15 @@
+
+@media screen and (max-width: 800px) {
+    .homepage-content-layout-container{
+        display: block;
+        width: 90%;
+    }
+    .user-information-body{
+        position: relative;
+        display: block;
+    }
+    .total-article-body {
+        padding-left: 0;
+    }
+
+}

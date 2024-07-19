@@ -1,0 +1,90 @@
+/* 代码块高亮样式 */
+pre code.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 1em;
+}
+.language-js{
+    color: #eaeaea;
+}
+code.hljs {
+    padding: 3px 5px;
+}
+.hljs {
+    color: #eaeaea;
+    background: #000;
+}
+.hljs-subst {
+    color: #eaeaea;
+}
+.hljs-emphasis {
+    font-style: italic;
+}
+.hljs-strong {
+    font-weight: 700;
+}
+.hljs-type {
+    color: #eaeaea;
+}
+/* 参数 */
+.hljs-params {
+    color: #ea00ff;
+}
+
+/* true颜色 */
+.hljs-literal,
+.hljs-name,
+.hljs-number {
+    color: rgb(105, 195, 255);
+    font-weight: bolder;
+}
+/* 注释颜色 */
+.hljs-comment {
+    color: #8a8a8a;
+}
+.hljs-quote,
+.hljs-selector-id {
+    color: #0ff;
+}
+/* 函数颜色 */
+.hljs-template-variable,
+.hljs-title,
+.hljs-variable {
+    color: #c3bf7b;
+    font-weight: 700;
+}
+
+
+/* 对象颜色 */
+.hljs-keyword,
+.hljs-selector-class,
+.hljs-symbol {
+    color: #9d6bb4;
+}
+/* 值的颜色 */
+.hljs-bullet,
+.hljs-string {
+    color: rgb(255, 142, 66);
+}
+
+.hljs-section,
+.hljs-tag {
+    color: rgb(105, 195, 255);
+}
+.hljs-selector-tag {
+    color: #000fff;
+    font-weight: 700;
+}
+.hljs-attribute,
+.hljs-built_in,
+.hljs-link,
+.hljs-regexp {
+    color: rgb(105, 195, 255);
+}
+.hljs-meta {
+    color: #fff;
+    font-weight: bolder;
+}
+.hljs-property{
+    color: #eaeaea;
+}
