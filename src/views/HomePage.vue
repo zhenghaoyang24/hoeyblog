@@ -87,15 +87,13 @@ export default {
 }
 
 .user-information-body {
-  //display: inline-block;
   border-radius: 5px;
   transition: box-shadow 0.2s;
   position: sticky;
   top: 75px;
-  //flex-grow: 1;
   min-width: 250px;
   width: 300px;
-  height: 500px;
+  height: fit-content;
 }
 
 

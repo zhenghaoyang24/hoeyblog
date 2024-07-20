@@ -3,29 +3,25 @@
 export default {
   methods: {},
   props:{
-    blurValue: {
-      type: Number,
-      default: 0, // 默认没有模糊效果
-    },
+    // blurValue: {
+    //   type: Number,
+    //   default: 0, // 默认没有模糊效果
+    // },
   },
   computed:{
-    styleObj() {
-      // 根据传递的 prop 动态计算样式
-      return {
-        filter: `blur(${this.blurValue}px)`,
-      };
-    },
+    // styleObj() {
+    //   // 根据传递的 prop 动态计算样式
+    //   return {
+    //     filter: `blur(${this.blurValue}px)`,
+    //   };
+    // },
   }
 }
 
 </script>
 
 <template>
-<div class="home-jumbotron" :style="styleObj">
-<!--  <p class="home-jumbotron-h">h</p>-->
-<!--  <p class="home-jumbotron-o">o</p>-->
-<!--  <p class="home-jumbotron-e">e</p>-->
-<!--  <p class="home-jumbotron-y">y</p>-->
+<div class="home-jumbotron">
   <div><p class="home-jumbotron-h">h</p></div>
   <div><p class="home-jumbotron-o">o</p></div>
   <div><p class="home-jumbotron-e">e</p></div>

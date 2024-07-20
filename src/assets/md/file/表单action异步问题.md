@@ -1,4 +1,4 @@
-**问题说明：** 若要利用input的自动检测功能（例如required="required"、type="email"），则必须利用form的action执行网络接口，且提交方式为type="submit"，但是action执行网络接口无法接受返回值， 导致无法接收如登录注册功能服务端响应的结果。若舍弃input的自动表单验证，手写每个表单的验证很麻烦，因此要解决利用form提交表单数据无法接收返回数据的问题
+**问题说明：** 若要利用input的自动检测功能（例如 <span class="markdown-text-background-color">required="required"</span> 、<span class="markdown-text-background-color">type="email"</span>），则必须利用form的action执行网络接口，且提交方式为type="submit"，但是action执行网络接口无法接受返回值， 导致无法接收如登录注册功能服务端响应的结果。若舍弃input的自动表单验证，手写每个表单的验证很麻烦，因此要解决利用form提交表单数据无法接收返回数据的问题
 
 **解决方法：** 利用iframe标签将form绑定，返回值将返回位在iframe上的页面，再获取页面中body的内容，即返回数据。
 

@@ -13,8 +13,8 @@
     --web-footer-background-color: #171717;
     --web-footer-h-color: #777777;
     --timeline-page-body-item: #989898;
-
-
+    --markdown-text-background-color: #454545;
+    --blockquote-background-color: #252525;
 }
 
 :root[theme="light"] {
@@ -32,8 +32,9 @@
     --web-footer-background-color: #f1f1f1;
     --web-footer-h-color: #777777;
     --timeline-page-body-item: #4e4e4e;
+    --markdown-text-background-color: #b8b8b8;
+    --blockquote-background-color: #b6b6b6;
 }
-
 body {
     background-color: var(--div-background-color);
 }
@@ -259,6 +260,20 @@ html::-webkit-scrollbar-thumb {
 /*文章详情*/
 .markdown-detail-body > h2 {
     color: var(--publi-text-color);
+}
+.markdown-text-background-color{  /*文字背景颜色*/
+    border-radius: 3px;
+    padding: 0 3px;
+    background-color: var(--markdown-text-background-color);
+    color: var(--publi-text-color);
+}
+.markdown-body blockquote{  /*markdown >>背景颜色*/
+    color: var(--publi-text-color);
+    padding: 5px;
+    background-color: var(--blockquote-background-color);
+}
+.markdown-body video{
+    width: 100%;
 }
 
 

@@ -50,6 +50,10 @@ export default {
   margin:  0 auto;
   //border: 1px red solid;
 }
+/*文件可添加html样式*/
+//markdown-text-background-color  文字背景
+
+
 @media screen  and (max-width: 800px) {
   .markdown-detail-body{
     padding-top: 70px;

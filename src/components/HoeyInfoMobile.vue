@@ -118,6 +118,7 @@ export default {
   }
 }
 .mobile-article-type-label{
+
   margin: 5px;
   padding: 10px;
   display: flex;

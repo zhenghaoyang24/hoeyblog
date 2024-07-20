@@ -1,4 +1,10 @@
 /* 代码块高亮样式 */
+.language-css{
+    color: #eaeaea;
+}
+.language-html{
+    color: #eaeaea;
+}
 pre code.hljs {
     display: block;
     overflow-x: auto;
