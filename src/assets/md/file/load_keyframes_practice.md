@@ -53,4 +53,4 @@
   }
 }
 ```
-<video loop autoplay src="../assets/load_keyframes_practice_1.mp4"><video/>
+<video style="width:50%;margin-left:24%" loop autoplay src="../assets/load_keyframes_practice_1.mp4"><video/>

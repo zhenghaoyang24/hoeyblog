@@ -9,7 +9,7 @@ JavaScript是单线程的，这意味着它一次只能执行一个任务。为�
 事件循环不断地检查调用栈是否为空，如果调用栈为空，并且任务队列中有待处理的任务，事件循环会将任务队列中的第一个任务移到调用栈中执行。  
 ### 1.同步任务与异步任务
 在js中任务被分为同步与异步任务，同步任务将在执行流程中直接进入调用栈进行执行，而异步任务会先进入任务队列等待执行。  
-**同步任务**： 在主线程上排队执行的任务，只有前一个任务执行完毕，才能执行后一个任务，例如<span class="markdown-text-background-color">console.lo()</span>。  
+**同步任务**： 在主线程上排队执行的任务，只有前一个任务执行完毕，才能执行后一个任务，例如<span class="markdown-text-background-color">console.log()</span>。  
 **异步任务**：不进入主线程、而进入”任务队列”的任务。  
 ### 2.微任务与宏任务
 在JavaScript中，**微任务(microtasks)**和**宏任务(macrotasks)** 是事件循环中处理异步任务的两种类型。它们代表了不同优先级的任务队列，事件循环会按照特定的顺序执行这些任务。
@@ -190,6 +190,4 @@ this._function1().then(res => {
 >async会定义一个函数为异步函数，它若有返回值，将会被封装在Promise对象中返回，如果对返回值通过.then()、.catch()注册了回调函数，该回调会进入任务队列中（微任务）等待同步任务完成才会被调用。  
 
 学习过程中参考了：
-[理解异步函数async和await的用法](https://blog.csdn.net/weixin_45811256/article/details/123638582)  
-[JS中的一部编程](https://www.bilibili.com/video/BV1WP4y187Tu/?spm_id_from=333.999.0.0&vd_source=7321dad95ddf8d120c28e815bcc771a5)  
-[JavaScript代码执行顺序](https://blog.csdn.net/weixin_43242942/article/details/139730533)
+[JS中的一部编程](https://www.bilibili.com/video/BV1WP4y187Tu/?spm_id_from=333.999.0.0&vd_source=7321dad95ddf8d120c28e815bcc771a5)、[JavaScript代码执行顺序](https://blog.csdn.net/weixin_43242942/article/details/139730533)
