@@ -267,6 +267,12 @@ html::-webkit-scrollbar-thumb {
     background-color: var(--markdown-text-background-color);
     color: var(--publi-text-color);
 }
+.md-self-span{
+    border-radius: 3px;
+    padding: 0 3px;
+    background-color: var(--markdown-text-background-color);
+    color: var(--publi-text-color);
+}
 .markdown-body blockquote{  /*markdown >>背景颜色*/
     color: var(--publi-text-color);
     padding: 5px;
