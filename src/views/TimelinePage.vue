@@ -95,6 +95,7 @@ export default {
 //}
 
 .timeline-page-body {
+  padding-bottom: 20px;
   margin: 70px auto;
   width: 60%;
   border-left-style: solid;

@@ -22,20 +22,15 @@ import "@/assets/style/markdown-css.css";
 // 代码高亮
 // import "highlight.js/styles/github.css"; //默认样式
 //主要css
-
 import "@/assets/style/public.css"
 import "@/assets/style/theme.css"
-
 
 
 // 映入md文章组件列表
 // import {mdArticle} from "/public/md/index.js";
 import {mdArticle} from "@/assets/md/index.js";
 Vue.use(mdArticle);
-
-
 Vue.config.productionTip = false
-
 new Vue({
   router,
   store,
