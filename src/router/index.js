@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomePage from "@/views/HomePage.vue";
 import ArticlePage from "@/views/ArticlePage.vue";
 import ArticleDetailPage from "@/views/ArticleDetailPage.vue";
+import NotFoundPage from "@/views/notFoundPage.vue";
 import TimelinePage from "@/views/TimelinePage.vue";
 
 
@@ -17,6 +18,7 @@ const router = new VueRouter({
     { path:'/article/:type?',component:ArticlePage},
     {path:'/articleDetail/:articleId',component:ArticleDetailPage},
     {path:'/timeline',component:TimelinePage},
+    {path:'*',component:NotFoundPage},
   ],
   // link自定义高亮类名
   linkActiveClass: 'router-active', // 配置模糊匹配的类名
