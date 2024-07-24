@@ -3,7 +3,7 @@
 export default {
   methods:{
     toGithub() {
-      window.location.href = 'https://github.com/zhenghaoyang24/heoy-blog';
+      window.location.href = 'https://github.com/zhenghaoyang24';
     },
   }
 }

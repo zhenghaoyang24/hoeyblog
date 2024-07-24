@@ -1,7 +1,4 @@
 // md文件批量引入
-// import test_md from "/public/md/方法.md";
-// import iframe_study from "/public/md/利用iframe标签解决form的action执行网络接口时获取不到返回数据的问题.md";
-// import vue_life_study from "/public/md/day03.md";
 import grid_layout_study from "@/assets/md/file/Grid布局.md";
 import examination_card from "@/assets/md/file/静态页面实现答题功能.md";
 import iframe_study from "@/assets/md/file/表单action异步问题.md";
